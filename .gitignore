@@ -1,0 +1,8 @@
+#Visual Studio 
+.vscode
+
+#Dependencies
+node_modules
+
+#Site build
+_site
