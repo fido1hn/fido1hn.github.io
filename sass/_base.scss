@@ -1,0 +1,32 @@
+/*
+Colors
+Primary: #12F7D6
+Primary light: #98FAEC
+BG dark: #292F36
+BG darker: #1A1E23
+Grey: #43454D
+White: #fff
+Html: #E54F26
+React: #28A9E0
+JS: #E7A020
+CSS: #0C73B8
+*/
+
+:root {
+  --color-primary: #12f7d6;
+  --color-primary-light: #98faec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primary);
+}
