@@ -1,17 +1,17 @@
 {
-  "name": "bs5-simple-starter",
-  "version": "1.0.0",
-  "description": "Simple workflow for working with and customizing Bootstrap 5",
-  "main": "index.js",
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "sass:build": "sass --no-source-map scss:css",
-    "watch:sass": "sass --no-source-map --watch sass/style.scss:css/style.css"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "author": "Brad Traversy",
-  "license": "MIT",
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.0",
-    "bootstrap": "^5.3.0",
-    "sass": "^1.62.0"
+  "dependencies": {
+    "nuxt": "^3.11.2",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
   }
 }
