@@ -1,10 +1,14 @@
 <template>
-  <div class="container mx-auto max-w-2xl">
-    <header class="flex items-center justify-between mt-2">
-      <div class="flex items-center space-x-12">
-        <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200"
-          >Confidence A.E</NuxtLink
-        >
+  <div class="container mx-auto max-w-4xl">
+    <header class="flex items-start md:items-center justify-between mt-2">
+      <div class="flex items-center md:space-x-12">
+        <div class="hidden md:block">
+          <NuxtLink
+            to="/"
+            class="text-xl font-semibold p-2 hover:bg-gray-200 dark:hover:bg-gray-800"
+            >Confidence A.E</NuxtLink
+          >
+        </div>
 
         <Menu />
       </div>
@@ -22,16 +26,16 @@
 
 <script lang="ts" setup>
 useHead({
-  titleTemplate: "%s - Confidence A.E",
+  titleTemplate: '%s - Confidence A.E',
   link: [
     {
-      rel: "preconnect",
-      href: "https://fonts.googleapis.com",
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com',
     },
     {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css2?family=Roboto&display=swap",
-      crossorigin: "",
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
+      crossorigin: '',
     },
   ],
 });
@@ -39,7 +43,7 @@ useHead({
 
 <style>
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300;
 }
 </style>

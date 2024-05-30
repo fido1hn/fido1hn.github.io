@@ -3,8 +3,10 @@ description: A beginner's guide to getting started with Vue 3.
 image: /images/vue-logo.png
 head:
   meta:
-    - name: "og:image"
+    - name: 'og:image'
       content: /images/vue-logo.png
+publishedAt: 2024-05-12 16:30:12
+toc: true
 ---
 
 # Introduction to Vue 3
@@ -37,9 +39,9 @@ const { createApp } = Vue;
 const app = createApp({
   data() {
     return {
-      message: "Hello Vue 3!",
+      message: 'Hello Vue 3!',
     };
   },
 });
-app.mount("#app");
+app.mount('#app');
 ```

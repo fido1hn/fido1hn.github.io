@@ -1,18 +1,20 @@
 ---
-title: "My Page Title"
-description: "What a lovely page."
+title: 'My Page Title'
+description: 'What a lovely page.'
 head:
   meta:
-    - name: "keywords"
-      content: "nuxt, vue, content"
-    - name: "robots"
-      content: "index, follow"
-    - name: "author"
-      content: "NuxtLabs"
-    - name: "copyright"
-      content: "© 2022 NuxtLabs"
-    - name: "og:title"
-      content: "This is an open graph title"
+    - name: 'keywords'
+      content: 'nuxt, vue, content'
+    - name: 'robots'
+      content: 'index, follow'
+    - name: 'author'
+      content: 'NuxtLabs'
+    - name: 'copyright'
+      content: '© 2022 NuxtLabs'
+    - name: 'og:title'
+      content: 'This is an open graph title'
+publishedAt: 2024-02-12 16:30:12
+toc: true
 ---
 
 # First post on our website
@@ -52,5 +54,3 @@ Tables:
   <div>Hello!</div>
 </html>
 ```
-
-[Go to the second article](/blog/second)
