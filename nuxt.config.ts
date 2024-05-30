@@ -6,6 +6,8 @@ export default defineNuxtConfig({
       name: 'page',
       mode: 'out-in',
     },
+    baseURL: '',
+    buildAssetsDir: 'assets',
   },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/content'],
   content: {

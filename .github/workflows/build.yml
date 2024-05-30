@@ -1,0 +1,25 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Set up Node.js and pnpm
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      # Install dependencies
+      - run: pnpm install
+      # Run build command
+      - run: pnpm run build
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.2
+        with:
+          branch: gh-pages
+          folder: 'dist' # Replace with the path to your build output folder
