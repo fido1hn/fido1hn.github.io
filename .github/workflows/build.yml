@@ -14,9 +14,9 @@ jobs:
         with:
           node-version: '20'
       # Install dependencies
-      - run: pnpm install
+      - run: npm install
       # Run build command
-      - run: pnpm run build
+      - run: npm run generate
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.2
