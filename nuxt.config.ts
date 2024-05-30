@@ -7,7 +7,6 @@ export default defineNuxtConfig({
       mode: 'out-in',
     },
     baseURL: '',
-    buildAssetsDir: 'assets',
   },
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxt/content'],
   content: {
