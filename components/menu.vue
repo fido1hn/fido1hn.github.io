@@ -1,8 +1,8 @@
 <template>
-  <nav class="">
-    <ul class="flex flex-col md:flex-row md:space-x-4">
+  <nav class="navbar">
+    <ul class="flex flex-col md:flex-row justify-between space-x-10">
       <li>
-        <NuxtLink to="/" class="link">Home</NuxtLink>
+        <NuxtLink to="/" class="link text-light-peach">Home</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/projects" class="link">Projects</NuxtLink>
@@ -11,7 +11,7 @@
         <NuxtLink to="/about" class="link">About</NuxtLink>
       </li>
       <li>
-        <NuxtLink to="/blog" class="link">Blog</NuxtLink>
+        <NuxtLink to="/contact" class="link">Contact</NuxtLink>
       </li>
     </ul>
   </nav>
@@ -20,7 +20,13 @@
 <script lang="ts" setup></script>
 
 <style scoped>
-.link {
-  @apply p-1 hover:bg-gray-200 dark:hover:bg-gray-800 text-xl md:text-base;
+.navbar {
+  background-color: #3d3d3d;
+  padding: 1rem 3.5rem;
+  border-radius: 100px;
+
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
 }
 </style>
