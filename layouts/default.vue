@@ -1,26 +1,52 @@
 <template>
-  <div class="container mx-auto max-w-4xl">
-    <header class="flex items-start md:items-center justify-between mt-2">
-      <div class="flex items-center md:space-x-12">
-        <div class="hidden md:block">
-          <NuxtLink
-            to="/"
-            class="text-xl font-semibold p-2 hover:bg-gray-200 dark:hover:bg-gray-800"
-            >Confidence A.E</NuxtLink
-          >
-        </div>
+  <div class="mx-auto p-10">
+    <div class="bg-light-dark mainbox-height grid grid-cols-3">
+      <article>
+        <p>longitude ~ <span>3.3958</span></p>
+        <p>latitude ~ <span>6.4530</span></p>
+      </article>
 
-        <Menu />
-      </div>
+      <div></div>
 
-      <ClientOnly>
-        <ColorModeSelector />
-      </ClientOnly>
-    </header>
+      <article>
+        <p>browser ~ <span>Chrome V127.0.6523.4</span></p>
+        <p>os ~ <span>Linux, Fedora</span></p>
+      </article>
 
-    <main class="p-2 mt-5">
-      <slot />
-    </main>
+      <div></div>
+
+      <article>
+        <p>Hi, i am</p>
+        <p>Confidence, Ekeanya</p>
+        <p>Full Stack Developer</p>
+      </article>
+
+      <div></div>
+
+      <article>
+        <p>local time ~ <span>44:00 PM</span></p>
+        <p>time spent ~ <span>5s</span></p>
+      </article>
+
+      <div></div>
+
+      <article>
+        <p>ip ~ <span>41.203.78.171</span></p>
+        <p>location ~ <span>Lagos, Nigeria</span></p>
+      </article>
+
+      <!-- <article>
+        <p>Hi, i am</p>
+        <p>Confidence, Ekeanya</p>
+        <p>Full Stack Developer</p>
+      </article> -->
+
+      <!-- <Menu /> -->
+
+      <!-- <main class="p-2 mt-5">
+        <slot />
+      </main> -->
+    </div>
   </div>
 </template>
 
@@ -34,7 +60,7 @@ useHead({
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap',
       crossorigin: '',
     },
   ],
@@ -43,7 +69,13 @@ useHead({
 
 <style>
 body {
-  font-family: 'Roboto', sans-serif;
-  @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300;
+  font-family: 'Orbitron', sans-serif;
+  /* @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300; */
+  background-color: rgb(17, 17, 17);
+  color: white;
+}
+
+.mainbox-height {
+  height: 90vh;
 }
 </style>
