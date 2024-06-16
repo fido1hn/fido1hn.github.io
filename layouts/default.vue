@@ -21,17 +21,11 @@
         <p class="corner-detail"><span>Lagos, Nigeria</span> ~ Location</p>
       </article>
 
-      <!-- <article>
-        <p>Hi, i am</p>
-        <p>Confidence, Ekeanya</p>
-        <p>Full Stack Developer</p>
-      </article> -->
-
       <Menu />
 
-      <!-- <main class="p-2 mt-5">
+      <main class="">
         <slot />
-      </main> -->
+      </main>
     </div>
   </div>
 </template>
@@ -46,7 +40,7 @@ useHead({
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap',
       crossorigin: '',
     },
   ],
@@ -73,15 +67,15 @@ body {
 
   background: linear-gradient(
         90deg,
-        transparent 0%,
-        transparent 0.5px,
+        #22222f 0%,
+        #22222f 0.5px,
         rgba(31, 31, 45, 0.7) 0.5px,
         rgba(31, 31, 45, 0.7) 1px
       )
       0 0,
     linear-gradient(
-        transparent 0%,
-        transparent 0.5px,
+        #22222f 0%,
+        #22222f 0.5px,
         rgba(31, 31, 45, 0.7) 0.5px,
         rgba(31, 31, 45, 0.7) 1px
       )
@@ -89,8 +83,19 @@ body {
   background-size: 20px 20px;
 }
 
+.mainbox::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(70px);
+}
+
 .corner-text {
   position: absolute;
+  font-weight: 500;
 }
 
 .top-left {

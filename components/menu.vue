@@ -28,5 +28,7 @@
   position: absolute;
   bottom: 0;
   transform: translateY(50%);
+
+  font-weight: bold;
 }
 </style>
