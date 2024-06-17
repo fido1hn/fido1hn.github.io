@@ -48,9 +48,9 @@
   }
   .middle {
     font-weight: 700;
-    /* font-size: 2rem; */
+    font-size: 2rem;
     transform: translateY(0);
-    line-height: 2.8rem;
+    line-height: 2.4rem;
   }
   .bottom {
     /* font-size: 0.8rem; */

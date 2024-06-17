@@ -139,10 +139,16 @@ body {
     padding: 1.5rem 1.5rem 0 1.5rem;
   }
   .mainbox {
-    height: 92vh;
+    height: 94vh;
   }
   .corner-text {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .mainbox {
+    /* height: 97vh; */
   }
 }
 
@@ -152,6 +158,8 @@ body {
   }
   .mainbox {
     border-radius: 1.5rem;
+    background-size: 15px 15px;
+    height: 97vh;
   }
 
   .corner-text {

@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-    <ul class="flex flex-col md:flex-row justify-between space-x-10">
+    <ul class="nav flex flex-col md:flex-row justify-between space-x-10">
       <li>
         <NuxtLink to="/" class="link text-light-peach">Home</NuxtLink>
       </li>
@@ -14,6 +14,7 @@
         <NuxtLink to="/contact" class="link">Contact</NuxtLink>
       </li>
     </ul>
+    <ThreeBars class="nav-icon" />
   </nav>
 </template>
 
@@ -30,5 +31,25 @@
   transform: translateY(50%);
 
   font-weight: bold;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media (max-width: 870px) {
+  .navbar {
+    padding: 0.5rem 0.5rem;
+    bottom: 70px;
+    transform: translateY(0);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-icon {
+    display: block;
+  }
 }
 </style>
