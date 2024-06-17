@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto p-10">
+  <div class="main-container">
     <div class="mainbox">
       <article class="corner-text top-left">
         <p class="corner-detail">Longitude ~ <span>3.3958</span></p>
@@ -7,7 +7,9 @@
       </article>
 
       <article class="corner-text top-right">
-        <p class="corner-detail"><span>Chrome V127.0.6523.4</span> ~ Browser</p>
+        <p class="corner-detail"
+          ><span>Chrome <span>V127.0.6523.4</span></span> ~ Browser</p
+        >
         <p class="corner-detail"><span>Linux, Fedora</span> ~ OS</p>
       </article>
 
@@ -55,6 +57,10 @@ body {
   color: white;
 }
 
+.main-container {
+  padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
 .mainbox {
   height: 90vh;
   border-radius: 3rem;
@@ -80,17 +86,17 @@ body {
         rgba(31, 31, 45, 0.7) 1px
       )
       0 0;
-  background-size: 20px 20px;
+  background-size: 10px 10px;
 }
 
 .mainbox::after {
   content: '';
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  filter: blur(70px);
+  filter: blur(60px);
 }
 
 .corner-text {
@@ -125,6 +131,35 @@ body {
 
   span {
     color: white;
+  }
+}
+
+@media (max-width: 925px) {
+  .main-container {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+  .mainbox {
+    height: 92vh;
+  }
+  .corner-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .main-container {
+    padding: 0.8rem 0.8rem 0 0.8rem;
+  }
+  .mainbox {
+    border-radius: 1.5rem;
+  }
+
+  .corner-text {
+    font-size: 0.6rem;
+  }
+
+  .corner-detail span span {
+    display: none;
   }
 }
 </style>
