@@ -52,7 +52,6 @@ useHead({
 <style>
 body {
   font-family: 'Orbitron', sans-serif;
-  /* @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300; */
   background-color: rgb(17, 17, 17);
   color: white;
 }
@@ -64,7 +63,6 @@ body {
 .mainbox {
   height: 90vh;
   border-radius: 3rem;
-  /* padding: 2rem 1rem; */
 
   display: flex;
   justify-content: center;
@@ -143,12 +141,6 @@ body {
   }
   .corner-text {
     font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 870px) {
-  .mainbox {
-    /* height: 97vh; */
   }
 }
 

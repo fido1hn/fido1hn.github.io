@@ -1,6 +1,7 @@
 <template>
   <nav class="navbar">
-    <ul class="nav flex flex-col md:flex-row justify-between space-x-10">
+    <ul
+      class="flex flex-col min-[870px]:flex-row justify-between min-[870px]:space-x-10 space-y-6 min-[870px]:space-y-0">
       <li>
         <NuxtLink to="/" class="link text-light-peach">Home</NuxtLink>
       </li>
@@ -14,8 +15,18 @@
         <NuxtLink to="/contact" class="link">Contact</NuxtLink>
       </li>
     </ul>
-    <ThreeBars class="nav-icon" />
   </nav>
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation">
+    <ThreeBars />
+  </button>
 </template>
 
 <script lang="ts" setup></script>
@@ -33,22 +44,32 @@
   font-weight: bold;
 }
 
-.nav-icon {
+.navbar-toggler {
   display: none;
+  background-color: #3d3d3d;
+  padding: 1rem 1rem;
+  border-radius: 100px;
+
+  position: absolute;
+  bottom: 70px;
 }
 
 @media (max-width: 870px) {
   .navbar {
-    padding: 0.5rem 0.5rem;
-    bottom: 70px;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 1rem 5rem;
+    bottom: 150px;
+    border-radius: 18px;
     transform: translateY(0);
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 
-  .nav {
-    display: none;
-  }
-
-  .nav-icon {
+  .navbar-toggler {
     display: block;
   }
 }
