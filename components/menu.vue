@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav class="navbar" :class="{ 'navbar-open': isNavOpen }">
     <ul
       class="flex flex-col min-[870px]:flex-row justify-between min-[870px]:space-x-10 space-y-6 min-[870px]:space-y-0">
       <li>
@@ -18,7 +18,9 @@
   </nav>
 
   <button
+    @click="toggleNavbar"
     class="navbar-toggler"
+    :class="{ 'toggle-shadow': isNavOpen }"
     type="button"
     data-bs-toggle="collapse"
     data-bs-target="#navbarSupportedContent"
@@ -29,7 +31,12 @@
   </button>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const isNavOpen = ref(false);
+const toggleNavbar = () => {
+  isNavOpen.value = !isNavOpen.value;
+};
+</script>
 
 <style scoped>
 .navbar {
@@ -67,10 +74,21 @@
     background-color: rgba(255, 255, 255, 0.1);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+
+    display: none;
   }
 
   .navbar-toggler {
     display: block;
+  }
+
+  .navbar-open {
+    display: block;
+  }
+
+  .toggle-shadow {
+    box-shadow: 0px 0px 10px 10px rgba(239, 241, 197, 0.2);
+    backdrop-filter: blur(5px);
   }
 }
 </style>
