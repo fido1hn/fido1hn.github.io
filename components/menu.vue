@@ -87,8 +87,9 @@ const toggleNavbar = () => {
   }
 
   .toggle-shadow {
-    box-shadow: 0px 0px 10px 10px rgba(239, 241, 197, 0.2);
-    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(239, 241, 197, 0.8),
+      0 0 20px rgba(239, 241, 197, 0.5), 0 0 30px rgba(239, 241, 197, 0.2),
+      0 0 40px rgba(239, 241, 197, 0.1);
   }
 }
 </style>

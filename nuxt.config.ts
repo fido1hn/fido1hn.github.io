@@ -25,4 +25,7 @@ export default defineNuxtConfig({
       routes: ['/sitemap.xml'],
     },
   },
+  routeRules: {
+    '/portfolio': { redirect: '/' },
+  },
 });
