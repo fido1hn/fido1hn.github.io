@@ -1,0 +1,1 @@
+import{_ as s,c,o,f as e}from"./BQjdg4p2.js";const t={},_={class:"flex"},n=e("h1",null,"Project Showcase",-1),r=e("div",{class:"projects"},[e("div"),e("div")],-1),a=[n,r];function d(i,l){return o(),c("div",_,a)}const h=s(t,[["render",d]]);export{h as default};
