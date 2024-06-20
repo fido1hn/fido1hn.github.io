@@ -3,16 +3,24 @@
     <ul
       class="flex flex-col min-[870px]:flex-row justify-between min-[870px]:space-x-10 space-y-6 min-[870px]:space-y-0">
       <li>
-        <NuxtLink to="/" class="link text-light-peach">Home</NuxtLink>
+        <NuxtLink to="/" class="link" activeClass="nuxt-link-active"
+          >Home</NuxtLink
+        >
       </li>
       <li>
-        <NuxtLink to="/projects" class="link">Projects</NuxtLink>
+        <NuxtLink to="/projects" class="link" activeClass="nuxt-link-active"
+          >Projects</NuxtLink
+        >
       </li>
       <li>
-        <NuxtLink to="/about" class="link">About</NuxtLink>
+        <NuxtLink to="/about" class="link" activeClass="nuxt-link-active"
+          >About</NuxtLink
+        >
       </li>
       <li>
-        <NuxtLink to="/contact" class="link">Contact</NuxtLink>
+        <NuxtLink to="/contact" class="link" activeClass="nuxt-link-active"
+          >Contact</NuxtLink
+        >
       </li>
     </ul>
   </nav>
@@ -59,6 +67,10 @@ const toggleNavbar = () => {
 
   position: absolute;
   bottom: 70px;
+}
+
+.nuxt-link-active {
+  color: #eff1c5;
 }
 
 @media (max-width: 870px) {
