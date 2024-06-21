@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div>
     <h1 class="heading">Projects Showcase</h1>
     <div
       class="projects flex flex-col justify-center items-center gap-y-5 min-[870px]:gap-x-20 min-[870px]:flex-row">
@@ -15,7 +15,7 @@
 
 <script lang="ts" setup></script>
 
-<style>
+<style scoped>
 .heading {
   font-size: 56px;
   font-weight: bold;
