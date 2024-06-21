@@ -57,6 +57,7 @@ const toggleNavbar = () => {
   transform: translateY(50%);
 
   font-weight: bold;
+  z-index: 99;
 }
 
 .navbar-toggler {
