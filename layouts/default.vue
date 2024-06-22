@@ -68,6 +68,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  min-height: 80vh;
 
   background: linear-gradient(
         90deg,
