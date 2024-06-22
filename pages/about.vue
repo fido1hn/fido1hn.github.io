@@ -1,7 +1,8 @@
 <template>
   <div class="max-w-3xl">
     <h1 class="heading">About</h1>
-    <div class="text-box px-5 flex flex-col space-y-4 leading-7 text-lg">
+    <div
+      class="text-box px-5 flex flex-col space-y-4 leading-7 text-sm min-[870px]:text-lg">
       <p>
         I'm Confidence, I'm a web developer. I'm 27, living in Lagos Nigeria.
         JavaScript Ninja.
@@ -30,5 +31,10 @@
 }
 .text-box {
   color: #eff1c5;
+}
+@media (max-width: 870px) {
+  .heading {
+    font-size: 40px;
+  }
 }
 </style>
