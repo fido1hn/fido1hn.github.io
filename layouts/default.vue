@@ -25,7 +25,7 @@
 
       <Menu />
 
-      <main class="">
+      <main class="relative">
         <slot />
       </main>
     </div>
