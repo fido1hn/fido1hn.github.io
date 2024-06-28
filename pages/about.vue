@@ -2,8 +2,8 @@
   <div class="max-w-3xl">
     <h1 class="heading">About</h1>
     <div
-      class="text-box px-5 text-center space-y-4 leading-7 text-sm min-[870px]:text-lg">
-      <p>I'm Confidence, I'm a web developer living in Lagos Nigeria.</p>
+      class="text-light-peach px-5 text-center space-y-4 leading-7 text-sm min-[870px]:text-lg">
+      <p>I'm Confidence, web developer living in Lagos Nigeria.</p>
       <p>
         I have more than 7 years of experience in web development, using
         Wordpress, Shopify, Python, Django, Vue, React, Node, Express, MongoDB,
@@ -27,10 +27,6 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 15px;
-}
-.text-box {
-  color: #eff1c5;
-  /* font-family: 'Titillium Web'; */
 }
 @media (max-width: 870px) {
   .heading {
