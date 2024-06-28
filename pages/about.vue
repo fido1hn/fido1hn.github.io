@@ -14,10 +14,6 @@
         products that solve real problems.
       </p>
     </div>
-    <!-- <img
-      src="/images/face_card.png"
-      alt="Profile Picture"
-      class="w-96 h-96 absolute bottom-0 -z-10" /> -->
   </div>
 </template>
 
@@ -34,3 +30,9 @@
   }
 }
 </style>
+
+<script setup>
+useHead({
+  title: 'About Me',
+});
+</script>

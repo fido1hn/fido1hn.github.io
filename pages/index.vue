@@ -64,3 +64,9 @@
   }
 }
 </style>
+
+<script setup>
+useHead({
+  title: 'Home',
+});
+</script>
