@@ -39,7 +39,7 @@
         </div>
         <button
           type="submit"
-          class="rounded-full px-8 py-2 bg-light-peach font-bold text-dark max-w-fit self-center hover:bg-[#bfc19e]"
+          class="rounded-full px-8 py-2 bg-light-peach font-bold text-dark max-w-fit self-center hover:bg-dark-peach focus:outline-none focus:ring focus:ring-dark-peach"
           >Submit</button
         >
       </form>

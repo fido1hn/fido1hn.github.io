@@ -9,6 +9,7 @@ module.exports = {
         'light-peach': '#eff1c5',
         ash: '#8C8C92',
         'dark-ash': '#363642',
+        'dark-peach': '#bfc19e',
       },
     },
     screens: {
