@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-3xl">
-    <h1 class="heading">About</h1>
+    <h1 class="text-3xl tablet:text-5xl font-bold text-center mb-4">About</h1>
     <div
       class="text-light-peach px-5 text-center space-y-4 leading-7 text-sm min-[870px]:text-lg">
       <p>I'm Confidence, web developer living in Lagos Nigeria.</p>
@@ -16,20 +16,6 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-.heading {
-  font-size: 56px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 15px;
-}
-@media (max-width: 870px) {
-  .heading {
-    font-size: 40px;
-  }
-}
-</style>
 
 <script setup>
 useHead({

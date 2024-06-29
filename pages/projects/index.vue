@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h1 class="heading">Projects Showcase</h1>
+  <div class="container p-5 mx-auto -mt-16 tablet:mt-0">
+    <h1 class="uppercase font-bold text-3xl tablet:text-5xl text-center mb-3"
+      >Projects Showcase</h1
+    >
     <div
       class="projects flex flex-col justify-center items-center gap-y-5 min-[870px]:gap-x-20 min-[870px]:flex-row">
       <div class="img-box">
@@ -20,13 +22,6 @@ useHead({
 </script>
 
 <style scoped>
-.heading {
-  font-size: 56px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 15px;
-  word-spacing: 0;
-}
 .img-box {
   width: 350px;
   height: 400px;
@@ -35,11 +30,6 @@ useHead({
 }
 
 @media (max-width: 870px) {
-  .heading {
-    font-size: 48px;
-    word-spacing: 100vw;
-    line-height: 1.2;
-  }
   .img-box {
     height: 350px;
     width: 300px;
