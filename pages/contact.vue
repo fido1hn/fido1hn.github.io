@@ -1,60 +1,63 @@
 <template>
-  <div
-    class="container grid grid-cols-2 gap-x-12 gap-y-12 max-w-4xl h-full mx-auto">
-    <!-- Heading -->
-    <h1 class="text-6xl font-bold uppercase leading-tight"
-      >Let's make something amazing!</h1
-    >
-
-    <!-- Form -->
-    <form
-      class="space-y-5 row-span-2 p-5 bg-dark-ash rounded-[48px] flex flex-col">
-      <div>
-        <label for="name" class="hidden">Name</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Name"
-          class="px-5 py-2 rounded-full bg-ash text-white placeholder:text-white w-full" />
-      </div>
-      <div>
-        <label for="email" class="hidden">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-          class="px-5 py-2 rounded-full bg-ash placeholder:text-white w-full" />
-      </div>
-      <div>
-        <label for="message" class="hidden">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Message"
-          rows="6"
-          class="px-5 py-2 rounded-xl bg-ash placeholder:text-white w-full"></textarea>
-      </div>
-      <button
-        type="submit"
-        class="rounded-full px-8 py-2 bg-light-peach font-bold text-dark max-w-fit self-center"
-        >Submit</button
+  <div class="container p-5 mx-auto">
+    <div
+      class="grid grid-cols-1 tablet:grid-cols-[auto_350px] gap-y-5 tablet:gap-y-11 max-w-[52rem] h-full">
+      <!-- Heading -->
+      <h1
+        class="text-3xl mb-5 tablet:mb-0 text-center tablet:text-6xl/[1.25] font-bold uppercase grid-cols-4"
+        >Let's make something amazing!</h1
       >
-    </form>
-
-    <!-- Personal Info -->
-    <div class="personal-info gap-3 flex items-center">
-      <div
-        class="bg-white rounded-full overflow-hidden border-4 border-light-peach">
-        <img
-          src="/images/face_card.png"
-          alt="Profile Photo"
-          class="h-20 w-20" />
-      </div>
-      <div class="info">
-        <p class="font-bold text-2xl text-light-peach">Confidence Ekeanya</p>
-        <p>Confidoekeanya@gmail.com</p>
+      <!-- Form -->
+      <form
+        class="space-y-2 tablet:space-y-5 row-span-2 p-3 tablet:p-5 bg-dark-ash rounded-2xl tablet:rounded-[48px] flex flex-col">
+        <div>
+          <label for="name" class="hidden">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            class="px-5 py-2 rounded-full bg-ash text-white placeholder:text-white w-full" />
+        </div>
+        <div>
+          <label for="email" class="hidden">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            class="px-5 py-2 rounded-full bg-ash placeholder:text-white w-full" />
+        </div>
+        <div>
+          <label for="message" class="hidden">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            rows="6"
+            class="px-5 py-2 rounded-xl bg-ash placeholder:text-white w-full"></textarea>
+        </div>
+        <button
+          type="submit"
+          class="rounded-full px-8 py-2 bg-light-peach font-bold text-dark max-w-fit self-center"
+          >Submit</button
+        >
+      </form>
+      <!-- Personal Info -->
+      <div class="personal-info gap-3 flex items-center justify-center">
+        <div
+          class="bg-white rounded-full overflow-hidden border-4 border-light-peach">
+          <img
+            src="/images/face_card.png"
+            alt="Profile Photo"
+            class="h-12 tablet:h-20 w-12 tablet:w-20" />
+        </div>
+        <div class="info">
+          <p class="font-bold text-base tablet:text-2xl text-light-peach"
+            >Confidence Ekeanya</p
+          >
+          <p class="text-xs tablet:text-base">Confidoekeanya@gmail.com</p>
+        </div>
       </div>
     </div>
   </div>
@@ -65,5 +68,3 @@ useHead({
   title: 'Contact Me',
 });
 </script>
-
-<style></style>

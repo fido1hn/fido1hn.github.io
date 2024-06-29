@@ -11,5 +11,9 @@ module.exports = {
         'dark-ash': '#363642',
       },
     },
+    screens: {
+      tablet: '870px',
+      laptop: '925px',
+    },
   },
 };
