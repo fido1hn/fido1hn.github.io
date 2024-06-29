@@ -1,27 +1,27 @@
 <template>
   <div class="main-container">
     <div class="mainbox">
-      <article class="corner-text top-left">
+      <div class="corner-text top-left">
         <p class="corner-detail">Longitude ~ <span>3.3958</span></p>
         <p class="corner-detail">Latitude ~ <span>6.4530</span></p>
-      </article>
+      </div>
 
-      <article class="corner-text top-right">
+      <div class="corner-text top-right">
         <p class="corner-detail"
           ><span>Chrome <span>V127.0.6523.4</span></span> ~ Browser</p
         >
         <p class="corner-detail"><span>Linux, Fedora</span> ~ OS</p>
-      </article>
+      </div>
 
-      <article class="corner-text bottom-left">
+      <div class="corner-text bottom-left">
         <p class="corner-detail">Local time ~ <span>44:00 PM</span></p>
         <p class="corner-detail">Time spent ~ <span>5s</span></p>
-      </article>
+      </div>
 
-      <article class="corner-text bottom-right">
+      <div class="corner-text bottom-right">
         <p class="corner-detail"><span>41.203.78.171</span> ~ IP</p>
         <p class="corner-detail"><span>Lagos, Nigeria</span> ~ Location</p>
-      </article>
+      </div>
 
       <Menu />
 
