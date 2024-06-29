@@ -1,10 +1,10 @@
 <template>
-  <div class="container p-5 mx-auto">
+  <div class="container p-5 mx-auto -mt-10 tablet:mt-0">
     <div
       class="grid grid-cols-1 tablet:grid-cols-[auto_350px] gap-y-5 tablet:gap-y-11 max-w-[52rem] h-full">
       <!-- Heading -->
       <h1
-        class="text-3xl mb-5 tablet:mb-0 text-center tablet:text-6xl/[1.25] font-bold uppercase grid-cols-4"
+        class="text-3xl text-center tablet:text-6xl/[1.25] font-bold uppercase grid-cols-4"
         >Let's make something amazing!</h1
       >
       <!-- Form -->
