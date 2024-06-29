@@ -3,22 +3,38 @@
     <ul
       class="flex flex-col min-[870px]:flex-row justify-between min-[870px]:space-x-10 space-y-6 min-[870px]:space-y-0">
       <li>
-        <NuxtLink to="/" class="link" activeClass="nuxt-link-active"
+        <NuxtLink
+          to="/"
+          class="link"
+          activeClass="nuxt-link-active"
+          @click="closeMenu"
           >Home</NuxtLink
         >
       </li>
       <li>
-        <NuxtLink to="/projects" class="link" activeClass="nuxt-link-active"
+        <NuxtLink
+          to="/projects"
+          class="link"
+          activeClass="nuxt-link-active"
+          @click="closeMenu"
           >Projects</NuxtLink
         >
       </li>
       <li>
-        <NuxtLink to="/about" class="link" activeClass="nuxt-link-active"
+        <NuxtLink
+          to="/about"
+          class="link"
+          activeClass="nuxt-link-active"
+          @click="closeMenu"
           >About</NuxtLink
         >
       </li>
       <li>
-        <NuxtLink to="/contact" class="link" activeClass="nuxt-link-active"
+        <NuxtLink
+          to="/contact"
+          class="link"
+          activeClass="nuxt-link-active"
+          @click="closeMenu"
           >Contact</NuxtLink
         >
       </li>
@@ -41,8 +57,13 @@
 
 <script lang="ts" setup>
 const isNavOpen = ref(false);
+
 const toggleNavbar = () => {
   isNavOpen.value = !isNavOpen.value;
+};
+
+const closeMenu = () => {
+  isNavOpen.value = false;
 };
 </script>
 
