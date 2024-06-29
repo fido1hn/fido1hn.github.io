@@ -17,7 +17,7 @@
             name="name"
             id="name"
             placeholder="Name"
-            class="px-5 py-2 rounded-full bg-ash text-white placeholder:text-white w-full" />
+            class="px-5 py-2 rounded-full bg-ash text-white placeholder:text-white w-full cursor-pointer focus:outline-none focus:ring focus:ring-light-peach" />
         </div>
         <div>
           <label for="email" class="hidden">Email</label>
@@ -26,7 +26,7 @@
             name="email"
             id="email"
             placeholder="Email"
-            class="px-5 py-2 rounded-full bg-ash placeholder:text-white w-full" />
+            class="px-5 py-2 rounded-full bg-ash text-white placeholder:text-white w-full cursor-pointer focus:outline-none focus:ring focus:ring-light-peach" />
         </div>
         <div>
           <label for="message" class="hidden">Message</label>
@@ -35,11 +35,11 @@
             id="message"
             placeholder="Message"
             rows="6"
-            class="px-5 py-2 rounded-xl bg-ash placeholder:text-white w-full"></textarea>
+            class="px-5 py-2 rounded-xl bg-ash text-white placeholder:text-white w-full cursor-pointer focus:outline-none focus:ring focus:ring-light-peach"></textarea>
         </div>
         <button
           type="submit"
-          class="rounded-full px-8 py-2 bg-light-peach font-bold text-dark max-w-fit self-center"
+          class="rounded-full px-8 py-2 bg-light-peach font-bold text-dark max-w-fit self-center hover:bg-[#bfc19e]"
           >Submit</button
         >
       </form>
