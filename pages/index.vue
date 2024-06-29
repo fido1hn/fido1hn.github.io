@@ -1,7 +1,7 @@
 <template>
   <article class="flex flex-col space-y-6 text-box">
     <p class="top">Hi, i am</p>
-    <p class="middle">Confidence Ekeanya</p>
+    <p class="middle uppercase">Confidence Ekeanya</p>
     <p class="bottom">Full Stack Developer</p>
   </article>
 </template>
@@ -44,7 +44,8 @@
 @media (max-width: 720px) {
   .top {
     /* font-weight: 400; */
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    @apply text-3xl;
   }
   .middle {
     font-weight: 700;
