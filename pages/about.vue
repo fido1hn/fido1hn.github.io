@@ -1,6 +1,8 @@
 <template>
   <div class="max-w-3xl">
-    <h1 class="text-3xl tablet:text-5xl font-bold text-center mb-4">About</h1>
+    <h1 class="text-3xl tablet:text-5xl font-bold text-center mb-4 uppercase"
+      >About</h1
+    >
     <div
       class="text-light-peach px-5 text-center space-y-4 leading-7 text-sm min-[870px]:text-lg">
       <p>I'm Confidence, web developer living in Lagos Nigeria.</p>
