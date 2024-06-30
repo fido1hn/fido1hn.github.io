@@ -1,9 +1,9 @@
 <template>
-  <article class="flex flex-col space-y-6 text-box">
+  <div class="flex flex-col space-y-6 text-box">
     <p class="top">Hi, i am</p>
-    <p class="middle uppercase">Confidence Ekeanya</p>
+    <h1 class="middle uppercase">Confidence Ekeanya</h1>
     <p class="bottom">Full Stack Developer</p>
-  </article>
+  </div>
 </template>
 
 <style scoped>

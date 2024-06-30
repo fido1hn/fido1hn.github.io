@@ -6,15 +6,15 @@
     <div
       class="text-light-peach px-5 text-center space-y-4 leading-7 text-sm min-[870px]:text-lg">
       <p>
-        Hello, I'm Confidence, a web developer based in Lagos, Nigeria. With
-        over 7 years of experience, I've honed my skills in platforms and
-        technologies, including WordPress, Shopify, Python, Django, Vue, React,
-        Node, Express, MongoDB, PostgreSQL and more.
+        Hi, I'm Confidence Ekeanya, Senior Web Developer based in Lagos,
+        Nigeria. With over 7 years of experience honing my skills in platforms
+        and technologies, including WordPress, Shopify, Python, Django, Vue,
+        React, Node, Express, MongoDB, PostgreSQL and more.
       </p>
       <p>
-        My passion lies in tackling complex challenges and crafting innovative
-        web solutions that not only solve real-world problems but are also built
-        with scalability and ease of maintenance in mind.
+        My passion is rooted in tackling complex challenges and crafting
+        innovative web solutions that not only solve real-world problems but are
+        also built with scalability and ease of maintenance in mind.
       </p>
       <p>
         I believe that great products not only deliver immediate results but
