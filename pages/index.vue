@@ -2,7 +2,7 @@
   <div class="flex flex-col space-y-6 text-box">
     <p class="top">Hi, i am</p>
     <h1 class="middle uppercase">Confidence Ekeanya</h1>
-    <p class="bottom">Full Stack Developer</p>
+    <p class="bottom text-light-peach">Full Stack Developer</p>
   </div>
 </template>
 
@@ -37,7 +37,6 @@
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Titillium Web', sans-serif;
-    color: #eff1c5;
   }
 }
 
