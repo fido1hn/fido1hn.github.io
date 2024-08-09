@@ -8,17 +8,17 @@
       <p>
         Hi, I'm Confidence Ekeanya, Senior Web Developer from the city of Lagos.
         With over 7 years of experience in platforms and technologies, including
-        JavaScript, TypeScript, Node, Vue, SQL, MongoDB, LangChain, Docker,
-        Supabase and more.
+        Vue, Tailwind, GSAP, JavaScript, TypeScript, Node, Express, Supabase,
+        MongoDB, Postgres, LangChain, and more.
       </p>
       <p>
         My passion is rooted in tackling complex challenges and crafting
-        innovative web solutions that not only solve real-world problems but are
-        also built with scalability and ease of maintenance in mind.
+        innovative web solutions that not only solve real-world problems and but
+        are built with scalability and ease of maintenance in mind.
       </p>
       <p>
-        I believe that great products not only deliver immediate results but
-        also stand the test of time.
+        I believe that great products will deliver immediate results and stand
+        the test of time.
       </p>
     </div>
   </div>
