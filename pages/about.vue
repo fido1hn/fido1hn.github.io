@@ -1,6 +1,7 @@
 <template>
   <div class="max-w-3xl -mt-14 tablet:mt-0">
-    <h1 class="text-3xl tablet:text-5xl font-bold text-center mb-4 uppercase"
+    <h1
+      class="text-xl laptop:text-3xl tablet:text-5xl font-bold text-center mb-4 uppercase"
       >About</h1
     >
     <div
