@@ -1,15 +1,18 @@
 <template>
-  <div class="container p-5 mx-auto -mt-16 tablet:mt-0">
-    <h1 class="uppercase font-bold text-3xl tablet:text-5xl text-center mb-3"
+  <div class="container p-10 mx-auto -mt-16 tablet:mt-0">
+    <h1
+      class="uppercase font-bold text-xl lg:text-3xl tablet:text-5xl text-center mb-3"
       >Projects Showcase</h1
     >
     <div
       class="projects flex flex-col justify-center items-center gap-y-5 min-[870px]:gap-x-20 min-[870px]:flex-row">
-      <div class="img-box">
-        <img src="/images/omnifood-webpage.png" alt="" />
-      </div>
-      <div class="img-box small">
-        <img src="/images/natours-webpage.png" alt="" />
+      <div class="flex flex-col items-center justify-center max-w-44">
+        <div class="img-box">
+          <img src="/images/omnifood-webpage.png" alt="" />
+        </div>
+        <div class="img-box small">
+          <img src="/images/natours-webpage.png" alt="" />
+        </div>
       </div>
     </div>
   </div>

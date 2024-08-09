@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: '#eff1c5',
+        'primary-dark': '#111111',
         'light-dark': '#202030',
         dark: '#20202D',
         'light-peach': '#eff1c5',
@@ -11,10 +13,13 @@ module.exports = {
         'dark-ash': '#363642',
         'dark-peach': '#bfc19e',
       },
-    },
-    screens: {
-      tablet: '870px',
-      laptop: '925px',
+      borderRadius: {
+        '4xl': '3rem',
+      },
+      screens: {
+        tablet: '870px',
+        laptop: '925px',
+      },
     },
   },
 };

@@ -1,31 +1,47 @@
 <template>
-  <div class="main-container">
-    <div class="mainbox">
-      <div class="corner-text top-left">
-        <p class="corner-detail">Longitude ~ <span>3.3958</span></p>
-        <p class="corner-detail">Latitude ~ <span>6.4530</span></p>
+  <div class="h-svh p-3 md:p-8 lg:p-12 bg-primary-dark w-screen">
+    <div
+      class="flex min-h-full justify-center items-center rounded-3xl md:rounded-4xl relative bg-[length:15px_15px] md:bg-[length:10px_10px] blur-effect custom-grid-background">
+      <div class="absolute font-medium top-5 left-5 text-[.6rem] md:text-base">
+        <p><span class="text-primary">Longitude ~ </span><span>3.3958</span></p>
+        <p><span class="text-primary">Latitude ~ </span><span>6.4530</span></p>
       </div>
 
-      <div class="corner-text top-right">
-        <p class="corner-detail"
-          ><span>Chrome <span>V127.0.6523.4</span></span> ~ Browser</p
+      <div class="absolute font-medium top-5 right-5 text-[.6rem] md:text-base">
+        <p class="">
+          <span>Chrome</span>
+          <span class="hidden md:inline"> V127.0.6523.4</span>
+          <span class="text-primary">~ Browser</span></p
         >
-        <p class="corner-detail"><span>Linux, Fedora</span> ~ OS</p>
+        <p class="text-right"
+          ><span>Linux, Fedora</span> <span class="text-primary">~ OS</span></p
+        >
       </div>
 
-      <div class="corner-text bottom-left">
-        <p class="corner-detail">Local time ~ <span>44:00 PM</span></p>
-        <p class="corner-detail">Time spent ~ <span>5s</span></p>
+      <div
+        class="absolute font-medium bottom-5 left-5 text-[.6rem] md:text-base">
+        <p
+          ><span class="text-primary">Local time ~ </span
+          ><span>44:00 PM</span></p
+        >
+        <p><span class="text-primary">Time spent ~ </span><span>5s</span></p>
       </div>
 
-      <div class="corner-text bottom-right">
-        <p class="corner-detail"><span>41.203.78.171</span> ~ IP</p>
-        <p class="corner-detail"><span>Lagos, Nigeria</span> ~ Location</p>
+      <div
+        class="absolute font-medium bottom-5 right-5 text-[.6rem] md:text-base">
+        <p class="text-right"
+          ><span>41.203.78.171</span> <span class="text-primary">~ IP</span></p
+        >
+        <p
+          ><span>Lagos, Nigeria</span>
+          <span class="text-primary">~ Location</span></p
+        >
       </div>
 
       <Menu />
 
-      <main class="relative z-10">
+      <main
+        class="relative z-10 border border-red-500 w-full flex items-center justify-center">
         <slot />
       </main>
     </div>
@@ -34,17 +50,8 @@
 
 <script lang="ts" setup>
 useHead({
-  titleTemplate: '%s - Confidence A.E',
+  titleTemplate: '%s - Confidence Ekeanya | Web Developer',
   link: [
-    {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com',
-    },
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap',
-      crossorigin: '',
-    },
     {
       rel: 'apple-touch-icon',
       sizes: '180x180',
@@ -70,115 +77,7 @@ useHead({
 <style>
 body {
   font-family: 'Orbitron', sans-serif;
-  background-color: rgb(17, 17, 17);
+  background-color: #111111;
   color: white;
-}
-
-.main-container {
-  padding: 2.5rem 2.5rem 0 2.5rem;
-}
-
-.mainbox {
-  height: 90vh;
-  border-radius: 3rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 80vh;
-
-  background: linear-gradient(
-        90deg,
-        #22222f 0%,
-        #22222f 0.5px,
-        rgba(31, 31, 45, 0.7) 0.5px,
-        rgba(31, 31, 45, 0.7) 1px
-      )
-      0 0,
-    linear-gradient(
-        #22222f 0%,
-        #22222f 0.5px,
-        rgba(31, 31, 45, 0.7) 0.5px,
-        rgba(31, 31, 45, 0.7) 1px
-      )
-      0 0;
-  background-size: 10px 10px;
-}
-
-.mainbox::after {
-  content: '';
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  filter: blur(60px);
-}
-
-.corner-text {
-  position: absolute;
-  font-weight: 500;
-}
-
-.top-left {
-  top: 20px;
-  left: 20px;
-}
-
-.top-right {
-  text-align: right;
-  top: 20px;
-  right: 20px;
-}
-
-.bottom-left {
-  bottom: 20px;
-  left: 20px;
-}
-
-.bottom-right {
-  text-align: right;
-  bottom: 20px;
-  right: 20px;
-}
-
-.corner-detail {
-  color: #eff1c5;
-
-  span {
-    color: white;
-  }
-}
-
-@media (max-width: 925px) {
-  .main-container {
-    padding: 1.5rem 1.5rem 0 1.5rem;
-  }
-  .mainbox {
-    height: 94vh;
-  }
-  .corner-text {
-    font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 610px) {
-  .main-container {
-    padding: 0.8rem 0.8rem 0 0.8rem;
-  }
-  .mainbox {
-    border-radius: 1.5rem;
-    background-size: 15px 15px;
-    height: 97vh;
-  }
-
-  .corner-text {
-    font-size: 0.6rem;
-  }
-
-  .corner-detail span span {
-    display: none;
-  }
 }
 </style>

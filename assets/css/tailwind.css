@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .custom-grid-background {
+    @apply bg-[#22222f];
+    background: linear-gradient(
+          90deg,
+          #22222f 0%,
+          #22222f 0.5px,
+          rgba(31, 31, 45, 0.7) 0.5px,
+          rgba(31, 31, 45, 0.7) 1px
+        )
+        0 0,
+      linear-gradient(
+          #22222f 0%,
+          #22222f 0.5px,
+          rgba(31, 31, 45, 0.7) 0.5px,
+          rgba(31, 31, 45, 0.7) 1px
+        )
+        0 0;
+    background-size: 10px 10px;
+  }
+
+  .blur-effect::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    filter: blur(60px);
+  }
+}
