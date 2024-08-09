@@ -1,15 +1,16 @@
 <template>
-  <div class="container p-5 mx-auto -mt-10 tablet:mt-0">
+  <div class="container p-12 lg:p-7 mx-auto -mt-20 tablet:mt-0">
     <div
       class="grid grid-cols-1 tablet:grid-cols-[auto_350px] gap-y-5 tablet:gap-y-11 max-w-[52rem] h-full">
       <!-- Heading -->
       <h1
-        class="text-3xl text-center tablet:text-6xl/[1.25] font-bold uppercase grid-cols-4"
+        class="text-xl lg:text-3xl text-center tablet:text-6xl/[1.25] font-bold uppercase grid-cols-4"
         >Let's make something amazing!</h1
       >
       <!-- Form -->
+
       <form
-        class="space-y-2 tablet:space-y-5 row-span-2 p-3 tablet:p-5 bg-dark-ash rounded-2xl tablet:rounded-[48px] flex flex-col">
+        class="space-y-2 tablet:space-y-5 row-span-2 p-5 lg:p-3 tablet:p-5 bg-dark-ash rounded-2xl tablet:rounded-[48px] flex flex-col">
         <div>
           <label for="name" class="hidden">Name</label>
           <input
@@ -43,6 +44,7 @@
           >Submit</button
         >
       </form>
+
       <!-- Personal Info -->
       <div class="personal-info gap-3 flex items-center justify-center">
         <div
@@ -50,13 +52,13 @@
           <img
             src="/images/face_card.png"
             alt="Profile Photo"
-            class="h-12 tablet:h-20 w-12 tablet:w-20" />
+            class="h-6 tablet:h-20 w-6 tablet:w-20" />
         </div>
         <div class="info">
-          <p class="font-bold text-base tablet:text-2xl text-light-peach"
+          <p class="font-bold text-sm tablet:text-2xl text-light-peach"
             >Confidence Ekeanya</p
           >
-          <p class="text-xs tablet:text-base">Confidoekeanya@gmail.com</p>
+          <p class="text-[0.6rem] tablet:text-base">confidoekeanya@gmail.com</p>
         </div>
       </div>
     </div>
