@@ -14,12 +14,12 @@
       </p>
       <p>
         My passion is rooted in tackling complex challenges and crafting
-        innovative web solutions that not only solve real-world problems and but
-        are built with scalability and ease of maintenance in mind.
+        innovative web solutions that not only solve real-world problems but are
+        also built with scalability and ease of maintenance in mind.
       </p>
       <p>
-        I believe that great products will deliver immediate results and stand
-        the test of time.
+        I believe that great products not only deliver immediate results but
+        also stand the test of time.
       </p>
     </div>
   </div>
