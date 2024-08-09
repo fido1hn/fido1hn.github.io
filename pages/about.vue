@@ -4,7 +4,7 @@
       >About</h1
     >
     <div
-      class="text-light-peach px-5 text-center space-y-4 leading-7 text-sm min-[870px]:text-lg">
+      class="font-mono text-light-peach px-5 text-center space-y-4 leading-7 text-sm min-[870px]:text-lg">
       <p>
         Hi, I'm Confidence Ekeanya, Senior Web Developer from the city of Lagos.
         With over 7 years of experience in platforms and technologies, including
