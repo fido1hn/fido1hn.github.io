@@ -1,23 +1,23 @@
 module.exports = {
-  darkMode: 'class',
-  plugins: [require('@tailwindcss/typography')],
   theme: {
     extend: {
       colors: {
-        primary: '#eff1c5',
-        'primary-dark': '#111111',
-        'light-dark': '#202030',
-        dark: '#20202D',
-        ash: '#8C8C92',
-        'dark-ash': '#363642',
-        'dark-peach': '#bfc19e',
+        peach: {
+          50: '#f9faec',
+          100: '#eff1c5',
+          200: '#e8e99f',
+          300: '#dbd869',
+          400: '#d0c63f',
+          500: '#c0b032',
+          600: '#a68d28',
+          700: '#856a23',
+          800: '#6f5624',
+          900: '#604823',
+          950: '#372611',
+        },
       },
       borderRadius: {
         '4xl': '3rem',
-      },
-      screens: {
-        tablet: '870px',
-        laptop: '925px',
       },
       fontFamily: {
         TitilliumWeb: ['Titillium Web', 'sans-serif'],

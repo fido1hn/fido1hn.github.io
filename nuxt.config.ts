@@ -10,14 +10,7 @@ export default defineNuxtConfig({
     baseURL: '',
   },
 
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
-    '@nuxt/content',
-    '@nuxtjs/google-fonts',
-    '@nuxt/icon',
-    '@nuxt/image',
-  ],
+  modules: ['@nuxtjs/google-fonts', '@nuxt/ui', '@nuxt/content'],
 
   googleFonts: {
     families: {
