@@ -1,64 +1,114 @@
 <template>
-  <div class="container p-12 lg:p-7 mx-auto -mt-20 tablet:mt-0">
+  <div
+    class="container -mt-10 md:-mt-0 px-7 mx-auto flex items-center justify-center">
     <div
-      class="grid grid-cols-1 tablet:grid-cols-[auto_350px] gap-y-5 tablet:gap-y-11 max-w-[52rem] h-full">
+      class="grid grid-cols-1 grid-rows-[45px_250px_50px] md:grid-rows-2 md:grid-cols-[300px_300px] lg:grid-cols-[350px_350px] gap-y-5 lg:gap-y-11 max-w-[52rem]">
       <!-- Heading -->
       <h1
-        class="text-xl lg:text-3xl text-center tablet:text-6xl/[1.25] font-bold uppercase grid-cols-4"
+        class="text-base text-center mt-0 md:mt-5 md:text-4xl md:leading-tight lg:text-5xl md:text-left font-bold uppercase"
         >Let's make something amazing!</h1
       >
       <!-- Form -->
-
-      <form
-        class="space-y-2 tablet:space-y-5 row-span-2 p-5 lg:p-3 tablet:p-5 bg-dark-ash rounded-2xl tablet:rounded-[48px] flex flex-col">
-        <div>
-          <label for="name" class="hidden">Name</label>
-          <input
-            type="text"
+      <div
+        class="md:row-span-2 w-10/12 ml-5 h-full md:h-[22.6rem] p-3 bg-dark-night rounded-[2.5rem]">
+        <UForm
+          :state="contactForm"
+          class="space-y-2"
+          @submit.prevent="submitForm">
+          <UFormGroup
+            label="Name"
             name="name"
-            id="name"
-            placeholder="Name"
-            class="px-5 py-2 rounded-full bg-ash text-white placeholder:text-white w-full cursor-pointer focus:outline-none focus:ring focus:ring-light-peach" />
-        </div>
-        <div>
-          <label for="email" class="hidden">Email</label>
-          <input
-            type="email"
+            size="sm"
+            :ui="{ label: { base: 'hidden' } }">
+            <UInput
+              type="text"
+              placeholder="Name"
+              :ui="{
+                rounded: 'rounded-full',
+                placeholder: 'dark:placeholder-gray-100 placeholder-gray-100',
+                color: {
+                  white: {
+                    outline:
+                      'ring-gray-600 dark:ring-gray-600 bg-dusk-night dark:bg-dusk-night dark:focus:ring-primary-100 focus:ring-primary-100',
+                  },
+                },
+              }" />
+          </UFormGroup>
+
+          <UFormGroup
+            label="Email"
             name="email"
-            id="email"
-            placeholder="Email"
-            class="px-5 py-2 rounded-full bg-ash text-white placeholder:text-white w-full cursor-pointer focus:outline-none focus:ring focus:ring-light-peach" />
-        </div>
-        <div>
-          <label for="message" class="hidden">Message</label>
-          <textarea
+            size="sm"
+            :ui="{ label: { base: 'hidden' } }">
+            <UInput
+              type="email"
+              placeholder="Email"
+              :ui="{
+                rounded: 'rounded-full',
+                placeholder: 'dark:placeholder-gray-100 placeholder-gray-100',
+                color: {
+                  white: {
+                    outline:
+                      'ring-gray-600 dark:ring-gray-600 bg-dusk-night dark:bg-dusk-night dark:focus:ring-primary-100 focus:ring-primary-100',
+                  },
+                },
+              }" />
+          </UFormGroup>
+
+          <UFormGroup
+            label="Message"
             name="message"
-            id="message"
-            placeholder="Message"
-            rows="6"
-            class="px-5 py-2 rounded-xl bg-ash text-white placeholder:text-white w-full cursor-pointer focus:outline-none focus:ring focus:ring-light-peach"></textarea>
-        </div>
-        <button
-          type="submit"
-          class="rounded-full px-8 py-2 bg-light-peach font-bold text-dark max-w-fit self-center hover:bg-dark-peach focus:outline-none focus:ring focus:ring-dark-peach"
-          >Submit</button
-        >
-      </form>
+            :ui="{ label: { base: 'hidden' } }">
+            <UTextarea
+              :rows="textareaRows"
+              placeholder="Message"
+              :ui="{
+                rounded: 'rounded-2xl',
+                placeholder: 'dark:placeholder-gray-100 placeholder-gray-100',
+                color: {
+                  white: {
+                    outline:
+                      'ring-gray-600 dark:ring-gray-600 bg-dusk-night focus:ring-primary-100 dark:bg-dusk-night dark:focus:ring-primary-100',
+                  },
+                },
+              }" />
+          </UFormGroup>
+
+          <div class="flex items-center justify-center">
+            <UButton
+              size="sm"
+              type="submit"
+              class="rounded-lg"
+              color="primary"
+              :ui="{
+                font: 'font-semibold',
+                variant: {
+                  solid: 'dark:bg-{color}-100 bg-{color}-100 text-gray-900',
+                },
+              }">
+              Submit
+            </UButton>
+          </div>
+        </UForm>
+      </div>
 
       <!-- Personal Info -->
-      <div class="personal-info gap-3 flex items-center justify-center">
+      <div
+        class="personal-info gap-3 flex items-center justify-center md:-mt-20">
         <div
           class="bg-white rounded-full overflow-hidden border-4 border-light-peach">
           <img
             src="/images/face_card.png"
             alt="Profile Photo"
-            class="h-6 tablet:h-20 w-6 tablet:w-20" />
+            class="h-10 md:h-20 w-10 md:w-20" />
         </div>
         <div class="info">
-          <p class="font-bold text-sm tablet:text-2xl text-light-peach"
-            >Confidence Ekeanya</p
+          <p class="font-bold text-sm md:text-xl lg:text-2xl text-primary-100"
+            >Confidence A.E.</p
           >
-          <p class="text-[0.6rem] tablet:text-base">confidoekeanya@gmail.com</p>
+          <p class="text-[0.6rem] md:text-xs lg:text-base"
+            >confidoekeanya@gmail.com</p
+          >
         </div>
       </div>
     </div>
@@ -69,4 +119,35 @@
 useHead({
   title: 'Contact Me',
 });
+
+const windowWidth = ref(window.innerWidth);
+
+const contactForm = reactive({
+  name: {
+    name: '',
+    email: '',
+    message: '',
+  },
+});
+
+const updateWindowWidth = () => {
+  windowWidth.value = window.innerWidth;
+};
+
+onMounted(() => {
+  window.addEventListener('resize', updateWindowWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateWindowWidth);
+});
+
+const textareaRows = computed(() => {
+  if (windowWidth.value < 768) return 4; // md:breakpoint
+  return 10; //
+});
+
+const submitForm = () => {
+  return;
+};
 </script>

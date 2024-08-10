@@ -7,24 +7,15 @@ export default defineNuxtConfig({
       name: 'page',
       mode: 'out-in',
     },
-    baseURL: '',
+    baseURL: '/',
   },
 
-  modules: ['@nuxtjs/google-fonts', '@nuxt/ui', '@nuxt/content'],
+  modules: ['@nuxtjs/google-fonts', '@nuxt/ui'],
 
   googleFonts: {
     families: {
       Orbitron: '400..900',
       'Titillium Web': '200..700',
-    },
-  },
-
-  content: {
-    highlight: {
-      theme: {
-        default: 'min-light',
-        dark: 'min-dark',
-      },
     },
   },
 

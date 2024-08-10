@@ -1,5 +1,6 @@
 module.exports = {
   theme: {
+    darkMode: 'class',
     extend: {
       colors: {
         peach: {
@@ -15,6 +16,8 @@ module.exports = {
           900: '#604823',
           950: '#372611',
         },
+        'dark-night': '#3C3C47',
+        'dusk-night': '#8C8C92',
       },
       borderRadius: {
         '4xl': '3rem',
