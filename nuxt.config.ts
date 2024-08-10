@@ -15,13 +15,14 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/content',
     '@nuxtjs/google-fonts',
-    "@nuxt/icon"
+    '@nuxt/icon',
+    '@nuxt/image',
   ],
 
   googleFonts: {
     families: {
       Orbitron: '400..900',
-      Titillium: '200..900',
+      'Titillium Web': '200..700',
     },
   },
 

@@ -8,7 +8,6 @@ module.exports = {
         'primary-dark': '#111111',
         'light-dark': '#202030',
         dark: '#20202D',
-        'light-peach': '#eff1c5',
         ash: '#8C8C92',
         'dark-ash': '#363642',
         'dark-peach': '#bfc19e',
@@ -19,6 +18,9 @@ module.exports = {
       screens: {
         tablet: '870px',
         laptop: '925px',
+      },
+      fontFamily: {
+        TitilliumWeb: ['Titillium Web', 'sans-serif'],
       },
     },
   },
