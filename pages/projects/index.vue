@@ -1,10 +1,11 @@
 <template>
-  <div class="h-80 -mt-10">
-    <h1 class="uppercase font-bold text-2xl lg:text-4xl text-center mb-3"
+  <div class="h-80 -mt-40 md:-mt-36">
+    <h1
+      class="uppercase font-bold text-2xl md:text-3xl lg:text-4xl text-center mb-3"
       >Projects Showcase</h1
     >
-    <div class="">
-      <UAccordion
+    <div class="flex justify-center items-center">
+      <!-- <UAccordion
         color="primary"
         variant="soft"
         size="xl"
@@ -37,7 +38,16 @@
             </p>
           </div>
         </template>
-      </UAccordion>
+      </UAccordion> -->
+
+      <!-- <img src="/images/finance-tracker.png" alt="" class="h-96 w-96" /> -->
+      <NuxtImg
+        provider="cloudinary"
+        src="al0mnnmfnq1lebj1jxmb.png"
+        sizes="320px md:369px"
+        height="md:380px"
+        class="mt-2 md:mt-5"
+        :modifiers="{ roundCorner: '30' }" />
     </div>
   </div>
 </template>
@@ -47,10 +57,10 @@ useHead({
   title: 'Projects',
 });
 
-const items = [
-  {
-    label: 'Finance Tracker',
-    slot: 'finance-tracker',
-  },
-];
+// const items = [
+//   {
+//     label: 'Finance Tracker',
+//     slot: 'finance-tracker',
+//   },
+// ];
 </script>

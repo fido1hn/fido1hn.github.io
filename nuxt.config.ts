@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     baseURL: '',
   },
 
-  modules: ['@nuxtjs/google-fonts', '@nuxt/ui'],
+  modules: ['@nuxtjs/google-fonts', '@nuxt/ui', '@nuxt/image'],
 
   googleFonts: {
     families: {
@@ -21,6 +21,12 @@ export default defineNuxtConfig({
 
   colorMode: {
     classSuffix: '',
+  },
+
+  image: {
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/di5iopizb/image/upload/v1722940622/',
+    },
   },
 
   routeRules: {
