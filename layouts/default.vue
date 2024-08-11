@@ -50,8 +50,7 @@
 
       <Menu />
 
-      <main
-        class="relative z-10 border border-red-500 w-full flex items-center justify-center">
+      <main class="relative z-10 w-full flex items-center justify-center">
         <slot />
       </main>
     </div>

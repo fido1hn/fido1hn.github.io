@@ -120,14 +120,12 @@ useHead({
   title: 'Contact Me',
 });
 
-const windowWidth = ref(window.innerWidth);
+const windowWidth = ref(0);
 
 const contactForm = reactive({
-  name: {
-    name: '',
-    email: '',
-    message: '',
-  },
+  name: '',
+  email: '',
+  message: '',
 });
 
 const updateWindowWidth = () => {
@@ -135,6 +133,7 @@ const updateWindowWidth = () => {
 };
 
 onMounted(() => {
+  updateWindowWidth();
   window.addEventListener('resize', updateWindowWidth);
 });
 

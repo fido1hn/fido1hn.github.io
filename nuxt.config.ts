@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       name: 'page',
       mode: 'out-in',
     },
-    baseURL: '/',
+    baseURL: '',
   },
 
   modules: ['@nuxtjs/google-fonts', '@nuxt/ui'],
