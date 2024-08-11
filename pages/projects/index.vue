@@ -47,7 +47,7 @@
         sizes="320px md:369px"
         height="md:380px"
         class="mt-2 md:mt-5"
-        :modifiers="{ roundCorner: '30' }" />
+        :modifiers="{ roundCorner: '20' }" />
     </div>
   </div>
 </template>
