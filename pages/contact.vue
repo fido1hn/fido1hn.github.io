@@ -2,10 +2,10 @@
   <div
     class="container -mt-10 md:-mt-0 px-7 mx-auto flex items-center justify-center">
     <div
-      class="grid grid-cols-1 grid-rows-[45px_250px_50px] md:grid-rows-2 md:grid-cols-[300px_300px] lg:grid-cols-[350px_350px] gap-y-5 lg:gap-y-11 max-w-[52rem]">
+      class="grid grid-cols-1 grid-rows-[55px_250px_50px] md:grid-rows-2 md:grid-cols-[300px_300px] lg:grid-cols-[350px_350px] gap-y-5 lg:gap-y-11 max-w-[52rem]">
       <!-- Heading -->
       <h1
-        class="text-base text-center mt-0 md:mt-5 md:text-4xl md:leading-tight lg:text-5xl md:text-left font-bold uppercase"
+        class="text-2xl text-center mt-0 md:mt-5 md:text-4xl md:leading-tight lg:text-5xl md:text-left font-bold uppercase"
         >Let's make something amazing!</h1
       >
       <!-- Form -->

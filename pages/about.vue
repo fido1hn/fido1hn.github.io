@@ -1,11 +1,10 @@
 <template>
   <div class="container max-w-5xl px-7 -mt-20">
-    <h1
-      class="text-base lg:text-3xl font-bold text-center mb-1 lg:mb-3 uppercase"
+    <h1 class="text-xl lg:text-3xl font-bold text-center mb-1 lg:mb-3 uppercase"
       >About</h1
     >
     <div
-      class="font-mono text-primary-100 text-center space-y-3 leading-5 lg:leading-7 text-xs md:text-base lg:text-xl">
+      class="font-mono text-primary-100 text-center space-y-3 leading-5 lg:leading-7 text-sm md:text-base lg:text-xl">
       <p>
         Hi, I'm Confidence Ekeanya, Senior Web Developer from the city of Lagos.
         With over 7 years of experience in platforms and technologies, including

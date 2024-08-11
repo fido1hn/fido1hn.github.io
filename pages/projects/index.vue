@@ -1,6 +1,6 @@
 <template>
   <div class="h-80 -mt-10">
-    <h1 class="uppercase font-bold text-lg lg:text-3xl text-center mb-3"
+    <h1 class="uppercase font-bold text-xl lg:text-3xl text-center mb-3"
       >Projects Showcase</h1
     >
     <div class="">
@@ -50,7 +50,6 @@ useHead({
 const items = [
   {
     label: 'Finance Tracker',
-    defaultOpen: true,
     slot: 'finance-tracker',
   },
 ];
