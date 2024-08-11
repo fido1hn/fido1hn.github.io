@@ -23,12 +23,6 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
-  nitro: {
-    prerender: {
-      routes: ['/sitemap.xml'],
-    },
-  },
-
   routeRules: {
     '/portfolio': { redirect: '/' },
   },
