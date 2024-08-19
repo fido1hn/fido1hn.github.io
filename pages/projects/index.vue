@@ -46,7 +46,7 @@
               variant="ghost"
               color="primary"
               class="mt-3"
-              to="" />
+              :to="`projects/${item.link}`" />
           </div>
         </template>
       </UAccordion>
@@ -65,21 +65,25 @@ const items = [
     defaultOpen: true,
     description:
       'An application for POS Agents to quickly keep track of POS transactions on the go, get financial reports and chat with A.I about their finances.',
+    link: 'finance-tracker',
   },
   {
     label: 'Natours Travels',
     description:
       'An application for tourist to book tours to scenic nature spots around the world, with geolocation tagging.',
+    link: 'natours-travel',
   },
   {
     label: 'Omnifood Website',
     description:
       'A landing page for an A.I meal planning and delivery company, with modern UI/UX branding and responsive design.',
+    link: 'ominifood-website',
   },
   {
     label: 'Natours Website',
     description:
       'A landing page for Natours travels web application, advanced animation, responsive design, and modern UI.',
+    link: 'natours-website',
   },
 ];
 </script>
