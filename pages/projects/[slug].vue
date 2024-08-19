@@ -6,7 +6,7 @@
         <NuxtImg
           provider="cloudinary"
           :src="project?.imageUrl"
-          sizes="100vw 200px md:400px"
+          sizes="100vw 250px md:400px"
           class="rounded-lg" />
       </div>
       <div class="max-w-96">
