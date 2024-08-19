@@ -35,7 +35,8 @@
 
         <template #item="{ item }">
           <div class="text-gray-900 dark:text-white text-center">
-            <p class="text-sm text-gray-200 dark:text-gray-400 mt-2 font-mono">
+            <p
+              class="text-sm md:text-lg text-gray-200 dark:text-gray-400 mt-2 font-mono">
               {{ item.description }}
             </p>
             <UButton
@@ -77,7 +78,7 @@ const items = [
     label: 'Omnifood Website',
     description:
       'A landing page for an A.I meal planning and delivery company, with modern UI/UX branding and responsive design.',
-    link: 'ominifood-website',
+    link: 'omnifood-website',
   },
   {
     label: 'Natours Website',
