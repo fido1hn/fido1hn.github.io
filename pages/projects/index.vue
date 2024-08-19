@@ -33,11 +33,10 @@
           </UButton>
         </template>
 
-        <template #finance-tracker>
+        <template #item="{ item }">
           <div class="text-gray-900 dark:text-white text-center">
             <p class="text-sm text-gray-200 dark:text-gray-400 mt-2 font-mono">
-              An application for POS Agents to quickly keep track of POS
-              transactions on the go and get financial reports.
+              {{ item.description }}
             </p>
           </div>
         </template>
@@ -54,7 +53,24 @@ useHead({
 const items = [
   {
     label: 'Finance Tracker',
-    slot: 'finance-tracker',
+    defaultOpen: true,
+    description:
+      'An application for POS Agents to quickly keep track of POS transactions on the go and get financial reports.',
+  },
+  {
+    label: 'Natours Travels',
+    description:
+      'An application for tourist to book tours to scenic nature spots around the world, with geolocation tagging.',
+  },
+  {
+    label: 'Omnifood Website',
+    description:
+      'A landing page for an A.I meal planning and delivery company, with modern UI/UX branding and responsive design.',
+  },
+  {
+    label: 'Natours Website',
+    description:
+      'A landing page for Natours travels web application, advanced animation, responsive design, and modern UI.',
   },
 ];
 </script>
