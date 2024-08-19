@@ -10,7 +10,7 @@
           class="rounded-lg" />
       </div>
       <div class="max-w-96">
-        <h2 class="font-semibold text-base md:text-3xl mb-2">{{
+        <h2 class="font-semibold text-lg md:text-3xl mb-2">{{
           project?.title
         }}</h2>
         <p class="font-mono text-sm md:text-lg text-primary-100 mb-1 md:mb-2">{{
