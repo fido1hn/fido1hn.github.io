@@ -1,37 +1,38 @@
 <template>
   <section class="px-5 w-full">
     <div
-      class="flex -mt-16 md:-mt-0 flex-col md:flex-row justify-center items-center md:items-start gap-4">
+      class="flex -mt-16 md:-mt-0 flex-col md:flex-row justify-center items-center md:items-start gap-2 md:gap-4">
       <div class="flex items-center justify-center">
         <NuxtImg
           provider="cloudinary"
           :src="project?.imageUrl"
-          width="400px"
-          sizes="100vw md:400px"
+          sizes="100vw 200px md:400px"
           class="rounded-lg" />
       </div>
       <div class="max-w-96">
-        <h2 class="font-semibold text-xl md:text-3xl mb-2">{{
+        <h2 class="font-semibold text-base md:text-3xl mb-2">{{
           project?.title
         }}</h2>
-        <p class="font-mono text-base md:text-lg text-primary-100 mb-2">{{
+        <p class="font-mono text-sm md:text-lg text-primary-100 mb-1 md:mb-2">{{
           project?.description
         }}</p>
-        <div class="flex items-center gap-1 mb-8">
+        <div class="flex items-center gap-1 mb-4 md:mb-8">
           <UButton
             label="Live Preview"
+            size="sm"
             icon="i-heroicons-arrow-top-right-on-square-20-solid"
             variant="ghost"
             :to="project?.live_preview"
             :trailing="true" />
           <UButton
             label="Source Code"
+            size="sm"
             icon="i-heroicons-arrow-top-right-on-square-20-solid"
             variant="ghost"
             :to="project?.source_code"
             :trailing="true" />
         </div>
-        <p class="font-medium text-lg mb-2">Tech Used:</p>
+        <p class="font-medium text-xs md:text-lg mb-2">Tech Used:</p>
         <div class="flex items-center gap-2">
           <UBadge
             v-for="tech in project?.technologies"
