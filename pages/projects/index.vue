@@ -55,7 +55,7 @@ const items = [
     label: 'Finance Tracker',
     defaultOpen: true,
     description:
-      'An application for POS Agents to quickly keep track of POS transactions on the go and get financial reports.',
+      'An application for POS Agents to quickly keep track of POS transactions on the go, get financial reports and chat with A.I about their finances.',
   },
   {
     label: 'Natours Travels',
