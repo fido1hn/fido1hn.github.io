@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col space-y-6 text-center">
+  <div class="flex flex-col space-y-6 text-center px-5">
     <p class="md:text-left text-3xl md:text-4xl">Hi, I am</p>
     <h1
       class="uppercase font-bold text-3xl translate-x-0 md:translate-x-14 lg:text-5xl"
