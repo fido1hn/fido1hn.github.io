@@ -38,6 +38,15 @@
             <p class="text-sm text-gray-200 dark:text-gray-400 mt-2 font-mono">
               {{ item.description }}
             </p>
+            <UButton
+              label="See more"
+              target="_blank"
+              icon="i-heroicons-arrow-top-right-on-square-20-solid"
+              :trailing="true"
+              variant="ghost"
+              color="primary"
+              class="mt-3"
+              to="" />
           </div>
         </template>
       </UAccordion>
