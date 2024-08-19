@@ -5,12 +5,15 @@
       >Projects Showcase</h1
     >
     <div class="flex justify-center items-center">
-      <!-- <UAccordion
+      <UAccordion
         color="primary"
         variant="soft"
         size="xl"
         :items="items"
-        :ui="{ default: { class: 'bg-primary-100' } }">
+        :ui="{
+          default: { class: 'bg-primary-100' },
+          wrapper: 'px-5 max-w-2xl',
+        }">
         <template #default="{ item, index, open }">
           <UButton
             color="gray"
@@ -32,22 +35,13 @@
 
         <template #finance-tracker>
           <div class="text-gray-900 dark:text-white text-center">
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">
+            <p class="text-sm text-gray-200 dark:text-gray-400 mt-2 font-mono">
               An application for POS Agents to quickly keep track of POS
               transactions on the go and get financial reports.
             </p>
           </div>
         </template>
-      </UAccordion> -->
-
-      <!-- <img src="/images/finance-tracker.png" alt="" class="h-96 w-96" /> -->
-      <NuxtImg
-        provider="cloudinary"
-        src="al0mnnmfnq1lebj1jxmb.png"
-        sizes="320px md:369px"
-        height="md:380px"
-        class="mt-2 md:mt-5"
-        :modifiers="{ roundCorner: '20' }" />
+      </UAccordion>
     </div>
   </div>
 </template>
@@ -57,10 +51,10 @@ useHead({
   title: 'Projects',
 });
 
-// const items = [
-//   {
-//     label: 'Finance Tracker',
-//     slot: 'finance-tracker',
-//   },
-// ];
+const items = [
+  {
+    label: 'Finance Tracker',
+    slot: 'finance-tracker',
+  },
+];
 </script>
