@@ -1,16 +1,20 @@
 <template>
-  <section class="px-5">
-    <div class="flex items-start gap-4">
-      <div>
+  <section class="px-5 w-full">
+    <div
+      class="flex -mt-16 md:-mt-0 flex-col md:flex-row justify-center items-center md:items-start gap-4">
+      <div class="flex items-center justify-center">
         <NuxtImg
           provider="cloudinary"
           :src="project?.imageUrl"
           width="400px"
+          sizes="100vw md:400px"
           class="rounded-lg" />
       </div>
-      <div class="w-96">
-        <h2 class="font-semibold text-3xl mb-2">{{ project?.title }}</h2>
-        <p class="font-mono text-lg text-primary-100 mb-2">{{
+      <div class="max-w-96">
+        <h2 class="font-semibold text-xl md:text-3xl mb-2">{{
+          project?.title
+        }}</h2>
+        <p class="font-mono text-base md:text-lg text-primary-100 mb-2">{{
           project?.description
         }}</p>
         <div class="flex items-center gap-1 mb-8">
