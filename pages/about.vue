@@ -7,9 +7,9 @@
     <div
       class="font-mono text-primary-100 text-center space-y-3 leading-5 lg:leading-9 text-sm md:text-base lg:text-xl">
       <p>
-        Hi, I'm Confidence Ekeanya, Senior Web Developer from the city of Lagos.
-        With over 7 years of experience in platforms and technologies, including
-        Vue, Tailwind, GSAP, JavaScript, TypeScript, Node, Express, Supabase,
+        Hi, I'm Confidence Ekeanya, Web Developer from the city of Lagos. With
+        over 7 years of experience in platforms and technologies, including Vue,
+        Tailwind, GSAP, JavaScript, TypeScript, Node, Express, Supabase,
         MongoDB, Postgres, Docker, LangChain, and more.
       </p>
       <p>
