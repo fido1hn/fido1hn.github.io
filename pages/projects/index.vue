@@ -47,7 +47,13 @@
               variant="ghost"
               color="primary"
               class="mt-3"
-              :to="`projects/${item.link}`" />
+              :to="`projects/${item.link}`"
+              :ui="{
+                variant: {
+                  ghost:
+                    'text-primary-100 dark:text-primary-100 hover:bg-primary-950',
+                },
+              }" />
           </div>
         </template>
       </UAccordion>

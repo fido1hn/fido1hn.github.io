@@ -23,14 +23,24 @@
             icon="i-heroicons-arrow-top-right-on-square-20-solid"
             variant="ghost"
             :to="project?.live_preview"
-            :trailing="true" />
+            :trailing="true"
+            :ui="{
+              variant: {
+                ghost: 'hover:bg-primary-950',
+              },
+            }" />
           <UButton
             label="Source Code"
             size="sm"
             icon="i-heroicons-arrow-top-right-on-square-20-solid"
             variant="ghost"
             :to="project?.source_code"
-            :trailing="true" />
+            :trailing="true"
+            :ui="{
+              variant: {
+                ghost: 'hover:bg-primary-950',
+              },
+            }" />
         </div>
         <p class="font-medium text-xs md:text-lg mb-2">Tech Used:</p>
         <div class="flex items-center gap-2">
