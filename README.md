@@ -1,4 +1,4 @@
-# Portfolio - Confidence Ekeanya
+# Confidence Ekeanya - Web Developer
 
 ## Technologies used
 
