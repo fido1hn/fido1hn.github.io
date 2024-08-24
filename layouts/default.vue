@@ -29,7 +29,7 @@
         class="absolute font-medium bottom-5 left-5 text-[.6rem] md:text-base">
         <p
           ><span class="text-primary-100">Local time ~ </span
-          ><span>44:00 PM</span></p
+          ><span>{{ formattedTime }}</span></p
         >
         <p
           ><span class="text-primary-100">Time spent ~ </span><span>5s</span></p
@@ -58,6 +58,8 @@
 </template>
 
 <script lang="ts" setup>
+import { formatTime } from '~/lib/utils';
+
 useHead({
   titleTemplate: '%s - Confidence Ekeanya | Web Developer',
   link: [
@@ -81,6 +83,9 @@ useHead({
     { rel: 'manifest', href: '/site.webmanifest' },
   ],
 });
+
+const time = new Date().toLocaleTimeString('en-NG', { hour12: false });
+const formattedTime = computed(() => formatTime(time));
 </script>
 
 <style>
