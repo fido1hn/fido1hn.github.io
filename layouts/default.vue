@@ -84,7 +84,10 @@ useHead({
   ],
 });
 
-const time = new Date().toLocaleTimeString('en-NG', { hour12: false });
+const time = new Date().toLocaleTimeString('en-NG', {
+  hour12: false,
+  timeZone: 'Africa/Lagos',
+});
 const formattedTime = computed(() => formatTime(time));
 </script>
 
