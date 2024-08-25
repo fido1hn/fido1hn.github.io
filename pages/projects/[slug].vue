@@ -58,4 +58,7 @@
 const { slug } = useRoute().params;
 const projects = useProjects();
 const project = computed(() => projects.value.find((p) => p.slug === slug));
+useHead({
+  title: `${project.value.title}`,
+});
 </script>
