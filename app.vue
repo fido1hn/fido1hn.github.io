@@ -14,7 +14,7 @@ useSeoMeta({
     'Web Portfolio, get to know Confidence Ekeanya and see his works and projects, specializing in JavaScript/TypeScript and Vue/Nuxt',
   ogImage: '/andriod-chrome-512x512.png',
   twitterCard: 'summary_large_image',
-  twitterImage: '/android-chrome-512x512.png',
+  twitterImage: '/android-chrome-192x192.png',
 });
 </script>
 
