@@ -82,6 +82,7 @@ useHead({
     },
     { rel: 'manifest', href: '/site.webmanifest' },
   ],
+  meta: [{ name: 'author', content: 'Confidence Ekeanya - Web Developer' }],
 });
 
 const time = new Date().toLocaleTimeString('en-NG', {
