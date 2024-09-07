@@ -47,7 +47,13 @@
           <UBadge
             v-for="tech in project?.technologies"
             :label="tech"
-            variant="outline" />
+            variant="outline"
+            :ui="{
+              variant: {
+                outline:
+                  'text-primary-100 dark:text-primary-100 ring-primary-100 dark:ring-primary-100',
+              },
+            }" />
         </div>
       </div>
     </div>
